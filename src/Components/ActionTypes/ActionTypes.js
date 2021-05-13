@@ -1,0 +1,11 @@
+export const INCREMENT = "INCREMENT";
+export const DECREASE = "DECREASE";
+export const SET_STORE_LOGIN = "SET_STORE_LOGIN";
+export const SET_STORE_PASSWORD = "SET_STORE_PASSWORD";
+export const SET_SUB_TYPE = "SET_SUB_TYPE";
+export const SET_NAME = "SET_NAME";
+export const SET_LAST_NAME = "SET_LAST_NAME";
+export const SET_PATRONYMIC = "SET_PATRONYMIC";
+export const SET_DATE_OF_BIRTH = "SET_FATE_OF_BIRTH";
+export const SET_EMAIL = "SET_EMAIL";
+export const SET_SEX = "SET_SEX";
