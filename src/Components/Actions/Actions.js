@@ -10,6 +10,8 @@ import {
   SET_DATE_OF_BIRTH,
   SET_EMAIL,
   SET_SEX,
+  SET_CARD_NUMBER,
+  SET_ERROR_MESSEGE
 } from "./../ActionTypes/ActionTypes";
 
 export function incrementAction() {
@@ -24,8 +26,6 @@ export function decreaseAction() {
 }
 
 export function setStoreLogin(login) {
-  //console.log("action");
-  //console.log(login)
   return {
     type: SET_STORE_LOGIN,
     payload: login,
@@ -33,7 +33,6 @@ export function setStoreLogin(login) {
 }
 
 export function setStorePassword(password) {
-  //console.log("action password");
   return {
     type: SET_STORE_PASSWORD,
     payload: password,
@@ -87,4 +86,18 @@ export function setStoreSex(sex) {
     type: SET_SEX,
     payload: sex,
   };
+}
+
+export function setStoreCardNumber(number){
+  return {
+    type: SET_CARD_NUMBER,
+    payload: number
+  }
+}
+
+export function setErrorMessege(messege){
+  return {
+    type: SET_ERROR_MESSEGE,
+    payload: messege,
+  }
 }

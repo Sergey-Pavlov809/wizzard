@@ -9,3 +9,5 @@ export const SET_PATRONYMIC = "SET_PATRONYMIC";
 export const SET_DATE_OF_BIRTH = "SET_FATE_OF_BIRTH";
 export const SET_EMAIL = "SET_EMAIL";
 export const SET_SEX = "SET_SEX";
+export const SET_CARD_NUMBER = "SET_CARD_NUMBER";
+export const SET_ERROR_MESSEGE = "SET_ERROR_MESSEGE";

@@ -3,7 +3,7 @@ const initialState = {
   login: "",
   password: "",
   subscribeType: "free",
-  firstName: "",
+  name: "",
   lastName: "",
   patronymic: "",
   dateOfBirth: "",
@@ -11,11 +11,12 @@ const initialState = {
   sex: "",
   ageThreshold: false,
   cardNumber: "",
+  errorMessege: "",
 };
 
 function addReducer(state = initialState, action) {
   //debugger;
-  console.log(action);
+  //console.log(action);
   switch (action.type) {
     case "INCREMENT":
       return { ...state, step: state.step + 1 };
@@ -39,6 +40,10 @@ function addReducer(state = initialState, action) {
       return { ...state, email: action.payload };
     case "SET_SEX":
       return { ...state, sex: action.payload };
+    case "SET_CARD_NUMBER":
+      return {...state, cardNumber: action.payload};
+    case "SET_ERROR_MESSEGE":
+      return {...state, errorMessege: action.payload};
     default:
       return state;
   }
